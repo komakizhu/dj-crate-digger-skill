@@ -1,0 +1,86 @@
+[
+  {
+    "query": "/crate-digger I need 25 tracks for a rooftop sunset set, starting organic and ending with deeper house. Prioritize SoundCloud links.",
+    "should_trigger": true
+  },
+  {
+    "query": "/迪歌 下个月在海边咖啡馆放歌，帮我挖一套温暖但不俗的 Organic House，30 首。",
+    "should_trigger": true
+  },
+  {
+    "query": "/DJ 周五小酒吧暖场，大家要有反应，但不要全是抖音神曲，House 为主。",
+    "should_trigger": true
+  },
+  {
+    "query": "帮我挖歌：想找一些像 DJ Koze 某些迷幻作品的曲子，适合凌晨两点后的地下室。",
+    "should_trigger": true
+  },
+  {
+    "query": "Build me four different playlist views for a tense left-field techno night and explain why the rankings differ.",
+    "should_trigger": true
+  },
+  {
+    "query": "找一套适合从 Warm Up 慢慢推到 Peak 的 Deep House，最好能导出到 Apple Music。",
+    "should_trigger": true
+  },
+  {
+    "query": "I have one reference track: Bicep — Glue. Dig outward from it for a 90-minute closing set, avoiding obvious duplicates.",
+    "should_trigger": true
+  },
+  {
+    "query": "给我做一张凌晨公路电子乐歌单，氛围第一，风格你来推断，但所有歌都要能验证。",
+    "should_trigger": true
+  },
+  {
+    "query": "Find current Bandcamp and SoundCloud tracks for a dub techno crate, sequence them, then give me an import-ready list.",
+    "should_trigger": true
+  },
+  {
+    "query": "我需要一套婚礼 afterparty 的电子歌单，先放熟歌，再逐渐转向更地下的声音。",
+    "should_trigger": true
+  },
+  {
+    "query": "/迪歌 周五午夜左场小酒吧，先用大家熟的土味采样暖场，再推到怪一点的中国地下俱乐部声响。",
+    "should_trigger": true
+  },
+  {
+    "query": "帮我用 FastAPI 和 LangGraph 开发一个 Spotify 推荐系统，并写好 OAuth 回调代码。",
+    "should_trigger": false
+  },
+  {
+    "query": "Spotify Web API 创建 playlist 一直返回 403，帮我诊断 scope 配置。",
+    "should_trigger": false
+  },
+  {
+    "query": "这段歌词是哪首歌：I remember when...？",
+    "should_trigger": false
+  },
+  {
+    "query": "请写一篇介绍 Deep House 历史的公众号文章。",
+    "should_trigger": false
+  },
+  {
+    "query": "帮我批量下载 SoundCloud 歌曲并转换成 320kbps MP3。",
+    "should_trigger": false
+  },
+  {
+    "query": "教我在 Ableton 里给 kick 和 bass 做 sidechain compression。",
+    "should_trigger": false
+  },
+  {
+    "query": "给我的 DJ 播客生成一张霓虹风封面图。",
+    "should_trigger": false
+  },
+  {
+    "query": "分析这两个音频文件的调性、LUFS 和动态范围。",
+    "should_trigger": false
+  },
+  {
+    "query": "把我硬盘里的音乐文件按艺人和专辑重命名并移动文件夹。",
+    "should_trigger": false
+  },
+  {
+    "query": "Deep House 和 Organic House 有什么区别？给我一个简短定义。",
+    "should_trigger": false
+  }
+]

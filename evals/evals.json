@@ -1,0 +1,131 @@
+{
+  "skill_name": "crate-digger",
+  "evals": [
+    {
+      "id": 1,
+      "name": "scene-first-organic-house",
+      "prompt": "/迪歌 下周六海边日落，我想先要温暖、松弛的氛围，再慢慢进入 groove。以 Organic House 和 Deep House 为主，不要太商业。给我做一套 30 首的歌单。",
+      "expected_output": "中文 Markdown Digging 报告；场景在动态综合权重中优先；包含四个版本、真实直接链接、假设与四段式综合版。",
+      "expectations": [
+        "报告语言为中文，官方曲名与艺人名不翻译",
+        "需求卡明确场景优先于风格和流行度",
+        "四个版本均有标题且综合版分为 Warm Up、Groove、Peak、Closing",
+        "最终曲目使用具体曲目页或具体发行页链接，不使用搜索结果页",
+        "未验证 BPM、调性或音频混音能力时不写成确定事实"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "popularity-first-export-boundary",
+      "prompt": "/DJ 大家都熟、能马上有反应的歌先考虑，周五晚上小酒吧，House 为主，但别全是最俗的榜单歌。先给报告，然后帮我导出 SoundCloud。",
+      "expected_output": "流行度优先的中文报告；四版本共享候选池；在 SoundCloud 外部写入前显示导出摘要并等待确认。",
+      "expectations": [
+        "动态综合版把流行度意图放在第一优先级",
+        "解释流行度优先仍需兼顾不俗与 House 场景",
+        "先输出报告，不直接声称已创建 SoundCloud 歌单",
+        "区分搜索平台、SoundCloud 导出目标与 prepare/execute 状态",
+        "外部写入前展示平台、版本、数量、缺失曲目并请求确认"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "english-leftfield-techno",
+      "prompt": "Find me a left-field techno set for a tiny basement after 2am. Keep it tense and strange, avoid obvious festival tracks, and give me SoundCloud links where possible. I didn't specify BPM, so use your judgment.",
+      "expected_output": "English report that infers BPM/energy conservatively, prioritizes genre because it appears first, and returns four verified playlist views without pretending to have performed audio analysis.",
+      "expectations": [
+        "报告语言为英文，官方曲名与艺人名保持原文",
+        "动态优先顺序为 style → scene → popularity",
+        "BPM/energy 推断被明确标为假设或未知",
+        "包含四个版本与四段式综合顺序",
+        "SoundCloud 直接曲目链接优先且不冒充做过 beatmatching 或听音频"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "chinese-dj-culture-and-platform-order",
+      "prompt": "/迪歌 周五午夜 12 点的左场小酒吧，我要把赵小六式喊麦、弹舌、压声和越南鼓当成采样语汇，先从大家熟的土味素材开场，再进入地下、怪一点的中国俱乐部声响。Apple Music 优先，SoundCloud 次之，明确不要 Spotify；不要创建歌单，只给报告，20 首。",
+      "expected_output": "准确理解中文 DJ 术语与文化语境；把赵小六作为声音/文化参考而非只做艺人串烧；Apple Music 在允许平台中排第一，SoundCloud 第二，完全不出现 Spotify；不执行导出。",
+      "expectations": [
+        "需求理解同时保留场景、中文 DJ 术语、声音参考、熟悉度变化和平台约束",
+        "没有把赵小六主题机械扩展成整晚只放该艺人作品",
+        "平台顺序明确为 Apple Music → SoundCloud，Spotify 被列为禁止且不出现在曲目链接中",
+        "动态综合优先级按原始提示词的明确顺序解释，而不是把平台顺序误当内容权重",
+        "export_intent 为 none，不询问登录或声称创建歌单"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "allowed-platforms-only",
+      "prompt": "/DJ 找 15 首适合凌晨地下室的 left-field techno，风格先于场景；只使用 SoundCloud 和 Apple Music，SoundCloud 优先；不要出现任何 Spotify 链接。综合版按紧张、怪异但能推进的顺序排列。",
+      "expected_output": "仅使用允许的平台；SoundCloud 链接优先、Apple Music 作为后备；不把平台偏好改写成风格排序；若平台缺失，明确标记而不是偷偷添加 Spotify。",
+      "expectations": [
+        "报告没有 Spotify URL 或 Spotify 作为来源",
+        "平台约束与平台优先级分开记录，SoundCloud 链接在可用时排在 Apple Music 前",
+        "风格优先的动态顺序仍为 style → scene → popularity",
+        "平台不可用时给出缺失/部分验证说明，不伪造可用性"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "track-by-track-verification",
+      "prompt": "/crate-digger 请联网搜索 12 首适合凌晨公路、氛围第一的电子乐，并逐曲核验。每首都要给具体曲目页或具体发行页直接链接；不要用搜索结果页、下载站或只凭记忆补歌。找不到可靠 BPM、发行时间或流派时写未知，不要猜。输出四个版本，但不要声称听过音频或做过 beatmatching。",
+      "expected_output": "中文联网 Digging 报告；每首最终曲目可追溯到直接来源；未知元数据显式标记；四版本和四段式顺序完整；不越界声称音频分析。",
+      "expectations": [
+        "报告说明使用联网搜索，并对最终曲目逐项提供直接链接",
+        "没有把搜索结果页、下载站或泛化首页当作曲目证据",
+        "不可靠的 BPM/发行时间/流派标为未知或不确定",
+        "每个版本来自同一验证候选池且综合版不重复录音",
+        "不声称听过未分析音频、已 beatmatch 或已 harmonic mix"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "four-views-shared-pool",
+      "prompt": "/迪歌 为一个 30 首的 rooftop sunset set 挖歌：从温暖有机开始，进入有 groove 的 House，最后到更深的夜色。请明确从同一个去重候选池输出风格优先版、场景优先版、流行度优先版和动态综合版；三个专项版各 10 首，综合版 30 首，候选不足就诚实少给，不要复制凑数。",
+      "expected_output": "四个视角均明确呈现；专项版各 10 首、综合版 30 首（或透明标注实际数量）；四版共享同一去重且已验证候选池。",
+      "expectations": [
+        "四种版本都存在且标题清晰",
+        "专项版默认 10 首，综合版目标 30 首，数量不足时不复制曲目",
+        "报告说明四版来自同一候选池，版本间可重复但各版本内部不重复",
+        "动态综合版包含 Warm Up、Groove、Peak、Closing"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "dedupe-versions-and-sequence",
+      "prompt": "/DJ 做一套 16 首的中国地下俱乐部歌单。跨 SoundCloud、Apple Music、Spotify 搜索，但同一录音在多个平台出现时只占一个位置并合并链接；Original、Remix、Dub、Live 要保留为不同版本。综合版必须按 Warm Up → Groove → Peak → Closing 排序，四段之间不得重复同一录音，也不要连续塞同一个艺人。",
+      "expected_output": "展示去重与版本识别规则；综合版按四段组成一条不重复的播放顺序，并在平台间合并同录音链接。",
+      "expectations": [
+        "同一录音的跨平台链接合并而不是重复占位",
+        "Original/Remix/Dub/Live 等确实不同的版本不被误合并",
+        "综合版四段顺序清楚且四段之间无重复录音",
+        "相邻曲目避免同艺人，必要时说明例外"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "target-platform-missing-fallback",
+      "prompt": "/crate-digger 我只接受 Apple Music 链接。请为一个很小众的中国 left-field club 夜晚找 12 首歌；如果某个候选在 Apple Music 找不到，就把它放到“目标平台缺失”清单，不要用相似曲替代，也不要放 Spotify 或 SoundCloud 代替。不要导出歌单，只给可核验报告。",
+      "expected_output": "严格按 Apple Music 目标平台交付；缺失曲目单独列出；不自动替换、不出现其他平台链接、不执行导出。",
+      "expectations": [
+        "最终可用曲目只提供 Apple Music 直接链接",
+        "找不到 Apple Music 页面时列入缺失清单而不是自动找相似曲",
+        "报告披露候选不足或平台限制，不为了凑数降低验证门槛",
+        "export_intent 为 none，不发起外部写入",
+        "默认仍输出风格、场景、流行度和综合四个视角，除非用户明确要求单一清单"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "explicit-priority-over-order",
+      "prompt": "/迪歌 适合下周六海边日落的 Deep House，场景和风格都要顾及，但我明确说：风格优先，场景第二，流行度最后。给我四个版本，综合版 18 首，说明你如何处理这个显式优先级。",
+      "expected_output": "即使场景词先出现，报告也遵循用户明确声明的 style → scene → popularity，并说明显式优先级覆盖文本出现顺序。",
+      "expectations": [
+        "需求卡记录显式优先级为 style → scene → popularity",
+        "综合版不因场景词更早出现而改成 scene-first",
+        "四个版本均有输出，综合版目标为 18 首且不复制凑数",
+        "说明显式优先级覆盖默认的首次出现顺序"
+      ]
+    }
+  ]
+}
