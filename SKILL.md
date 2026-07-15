@@ -1,9 +1,9 @@
 ---
-name: crate-digger
-description: Use when a user asks to dig, discover, curate, rank, sequence, or export music for a DJ set, playlist, venue, mood, scene, genre, artist reference, or track reference; also use for /crate-digger, /迪歌, /DJ, “挖歌”, “做歌单”, “找一套”, and equivalent Chinese or English requests.
+name: dj-crate-digger
+description: Use when a user asks to dig, discover, curate, rank, sequence, or export music for a DJ set, playlist, venue, mood, scene, genre, artist reference, or track reference; also use for /dj-crate-digger, the legacy /crate-digger alias, /迪歌, /DJ, “挖歌”, “做歌单”, “找一套”, and equivalent Chinese or English requests.
 ---
 
-# Crate Digger
+# DJ Crate Digger
 
 ## 目标
 

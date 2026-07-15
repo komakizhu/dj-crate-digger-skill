@@ -1,4 +1,4 @@
-# Crate Digger Skill
+# DJ Crate Digger Skill
 
 面向 DJ、音乐制作人与电子音乐听众的 Codex Skill：把自然语言 Digging 需求转成经过联网搜索、逐曲验证、去重、排序和播放顺序设计的 Markdown 报告。
 

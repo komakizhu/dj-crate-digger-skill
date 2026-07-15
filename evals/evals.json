@@ -1,5 +1,5 @@
 {
-  "skill_name": "crate-digger",
+  "skill_name": "dj-crate-digger",
   "evals": [
     {
       "id": 1,
@@ -68,7 +68,7 @@
     {
       "id": 6,
       "name": "track-by-track-verification",
-      "prompt": "/crate-digger 请联网搜索 12 首适合凌晨公路、氛围第一的电子乐，并逐曲核验。每首都要给具体曲目页或具体发行页直接链接；不要用搜索结果页、下载站或只凭记忆补歌。找不到可靠 BPM、发行时间或流派时写未知，不要猜。输出四个版本，但不要声称听过音频或做过 beatmatching。",
+      "prompt": "/dj-crate-digger 请联网搜索 12 首适合凌晨公路、氛围第一的电子乐，并逐曲核验。每首都要给具体曲目页或具体发行页直接链接；不要用搜索结果页、下载站或只凭记忆补歌。找不到可靠 BPM、发行时间或流派时写未知，不要猜。输出四个版本，但不要声称听过音频或做过 beatmatching。",
       "expected_output": "中文联网 Digging 报告；每首最终曲目可追溯到直接来源；未知元数据显式标记；四版本和四段式顺序完整；不越界声称音频分析。",
       "expectations": [
         "报告说明使用联网搜索，并对最终曲目逐项提供直接链接",
@@ -105,7 +105,7 @@
     {
       "id": 9,
       "name": "target-platform-missing-fallback",
-      "prompt": "/crate-digger 我只接受 Apple Music 链接。请为一个很小众的中国 left-field club 夜晚找 12 首歌；如果某个候选在 Apple Music 找不到，就把它放到“目标平台缺失”清单，不要用相似曲替代，也不要放 Spotify 或 SoundCloud 代替。不要导出歌单，只给可核验报告。",
+      "prompt": "/dj-crate-digger 我只接受 Apple Music 链接。请为一个很小众的中国 left-field club 夜晚找 12 首歌；如果某个候选在 Apple Music 找不到，就把它放到“目标平台缺失”清单，不要用相似曲替代，也不要放 Spotify 或 SoundCloud 代替。不要导出歌单，只给可核验报告。",
       "expected_output": "严格按 Apple Music 目标平台交付；缺失曲目单独列出；不自动替换、不出现其他平台链接、不执行导出。",
       "expectations": [
         "最终可用曲目只提供 Apple Music 直接链接",
